@@ -8,7 +8,7 @@ cuisine
 
 [Cuisine](https://github.com/sebastien/cuisine) is a small set of functions that sit on top of Fabric, to abstract common administration operations such as file/dir operations, user/group creation, package install/upgrade, making it easier to write portable administration and deployment scripts.
 
-## About our recipe
+### About our recipe
 
 Currently, we have one recipe to automate a *Tomcat / MySQL / nginx* deployment on *Ubuntu 12.04 LTS server (64 bits)*.
 
@@ -58,7 +58,7 @@ Normally, you should be able to re-run the whole setup recipe even after you've 
 - Cuisine source to find out about the available functions.
 - Our recipe in `fabfile.py`. Enhance it and adapt it to your needs.
 
-### Target and sta
+### Target
 
 Should work on any host, be it in the cloud or in-house.
 
