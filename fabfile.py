@@ -5,7 +5,7 @@ from fabric.api import *
 env.use_ssh_config = False
 
 # Your host(s)
-env.hosts = ['vps31544.ovh.net']
+env.hosts = ['myhost.com']
 
 # Deploying to Amazon EC2 instance?
 # If True, user creation, ssh setup and firewall configuration will be skipped
