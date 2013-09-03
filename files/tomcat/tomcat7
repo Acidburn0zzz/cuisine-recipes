@@ -1,0 +1,9 @@
+# Set tomcat7 options in
+# /etc/default/tomcat7
+#
+# Do not set anything in /usr/share/tomcat7/bin/catalina.sh, it will be lost after (automatic) ubuntu updates!
+
+# Keep existing settings to avoid a change in bahavior, for instance:
+JAVA_OPTS="-Djava.awt.headless=true -Xmx318m -XX:+UseConcMarkSweepGC"
+
+JAVA_OPTS="${JAVA_OPTS} -Dgrails.full.stacktrace=true"

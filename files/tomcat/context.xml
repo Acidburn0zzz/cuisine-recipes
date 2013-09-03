@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="" docBase="/home/ubuntu/webapps/ROOT">
+  <Resource name="jdbc/my_app" auth="Container" type="javax.sql.DataSource"
+       maxActive="100" maxIdle="30" maxWait="10000"
+       username="db_name" password="db_user_password" driverClassName="com.mysql.jdbc.Driver"
+       url="jdbc:mysql://localhost/db_name?createDatabaseIfNotExist=false&amp;useUnicode=true&amp;characterEncoding=utf-8"
+       minEvictableIdleTimeMillis="1800000"
+       timeBetweenEvictionRunsMillis="1800000"
+       numTestsPerEvictionRun="3"
+       testOnBorrow="true"
+       testWhileIdle="true"
+       testOnReturn="true"
+       validationQuery="SELECT 1"/>
+
+
+  <Resource name="mail/my_app" auth="Container"
+        type="javax.mail.Session"
+        username=""
+        password=""
+        mail.debug="false"
+        mail.user=""
+        mail.from="MyApp &lt;my.app@gmail.com&gt;"
+        mail.transport.protocol="smtp"
+        mail.smtp.host= "localhost"
+        mail.smtp.auth= "false"
+        mail.smtp.port= "25"
+        mail.smtp.starttls.enable="false"
+        description="Global E-Mail Resource"
+    />
+</Context>
