@@ -33,6 +33,8 @@ Follow the installation instructions [here](https://github.com/sebastien/cuisine
 $ virtualenv --distribute venv
 ```
 
+Add the recipes module to your new virtualenv by creating a file named `venv/lib/python2.7/site-packages/cuisine-recipes.pth` containing the path to your project, as a single line. For instance '/Users/me/cuisine-recipes'. Alternatively, you can use an unpretty `../../../..` as single line. TODO: improve this
+
 To use the environment:
 
 ```python
@@ -47,7 +49,9 @@ $ source venv/bin/deactivate
 
 ### How to use
 
-From the command line, run `fab` to launch the full setup. You may run an individual target, for instance `fab version` to check that your installation works.
+From the command line, run `fab setup` to launch the full setup.
+
+You may run individual targets. For that you must specify the filename, for instance `fab -f recipes/ubuntu.py version` to check that your installation works.
 
 Normally, you should be able to re-run the whole setup recipe even after you've already run it once.
 
