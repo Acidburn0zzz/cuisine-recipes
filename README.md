@@ -1,5 +1,5 @@
-cuisine
-=======
+cuisine-recipes
+===============
 
 *Samples and recipes for Cuisine, a lightweight Chef/Puppet alternative in Python.*
 
